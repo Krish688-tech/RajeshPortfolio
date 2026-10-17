@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+:root {
+  --background: #080808;
+  --background-secondary: #0d0d0d;
+  --background-card: #111111;
+
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1a1;
+
+  --blue-glow: #4f7cff;
+  --purple-glow: #8b5cf6;
+
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--blue-glow);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.hero-preview {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/** @media (min-width: 768px) {
+  body,
+  a,
+  button {
+    cursor: none;
+  }
+}**/
